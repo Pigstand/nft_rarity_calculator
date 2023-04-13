@@ -7,6 +7,10 @@ Added a new adjustment factor to the rarity score calculation that takes into ac
 
 The adjustment factor is calculated by dividing 1 by the number of trait values an NFT has, and is stored in the traitCountFactor variable. The rarity score for each NFT is then multiplied by this adjustment factor, resulting in an adjusted rarity score that reflects the NFT's rarity relative to its number of trait values.
 
+# Formatting Options
+type is a variable initialized with a string value of either "1" or "2" It is used to determine the type of formatting used in the rarity_scores.json
+If type is less than or equal to 1, it will use minimal formatting, and if type is greater than 1, it will use maximum formatting. 
+
 ## Requirements
 
 The project will output an ordered list of each edition with corresponding rarity score. The output file will be `rarity_scores.json`.
